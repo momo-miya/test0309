@@ -1,0 +1,123 @@
+@charset "UTF-8";
+html {
+	overflow-y: scroll; /* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+	/*Internet Explorerが独自に追加したプロパティ*/
+	/*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+    scroll-behavior: smooth;
+}
+/* リセットおまじない--------------------------------- */
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #fff;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.4;
+	min-width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+li {
+	list-style: none;
+}
+a {
+	outline: none;
+	color: inherit;
+    text-decoration: none;
+}
+img {
+	border: 0px;
+	vertical-align: bottom;
+}
+/* --------------------------------------------------- */
+body {
+	font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+    color:#3b4043;
+    
+}
+h1{
+    font-size: 28px;
+    margin: 40px;
+}
+h2{
+    font-size: 20px;
+    margin: 10px 0;
+}
+p{
+    text-align: left;
+}
+a{
+    display:block;
+}
+
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 55px;
+    color: cornsilk;
+    font-weight: 700;
+    line-height: 55px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 10;
+    
+}
+header ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#main-visual .container{
+    width: 100%;
+    height: 600px;
+    color: #fff;
+    background: no-repeat center center;
+    background-size: cover;
+    background-image: url(../img/istockphoto-1350036878-170667a.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about{
+    background-color: yellowgreen;
+    border: 3px solid #000;
+    margin: 100px;
+    padding: 100px;
+    position: relative;
+}
+#about h2{
+    position: absolute;   /* 親要素が基準 */
+    top: 0;
+    left: 0;
+
+}
+
+
+#gallery .inline-container img {
+    width: 250px;
+    height: 200px;
+} 
+.inline-container span,
+.block-container p{
+    width: 300px;
+    height: 200px;
+    background-color: turquoise;
+    margin: 20px;
+    /* padding: 20px */
+    text-align: center;
+    margin: 0 auto;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
